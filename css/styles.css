@@ -243,7 +243,6 @@ img {
 
 .description .container {
   display: flex;
-  padding-bottom: -1;
 }
 .description-list {
   list-style-type: none;

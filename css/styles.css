@@ -294,7 +294,7 @@ img {
 /* === END SECOND TITLE(S) === */
 
 /* ===--- CZYM SIĘ ZAJMUJEMY (zdjęcia) /// ZESPÓŁ /// PROJECT/IMAGES---=== */
-
+/*  ---=== LISTY (różne) ===--- */
 .item-list {
   list-style-type: none;
   display: flex;
@@ -302,13 +302,26 @@ img {
   /* === align-items: center CZY justify-content: center === */
   justify-content: center;
 }
+.photo-list:nth-of-type(3n + 1) {
+  margin-right: 30px;
+} 
+.photo-list:nth-of-type(3n + 2) {
+  margin-right: 30px;
+} 
+
+.portfolio-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 /* === jak to inaczej zapisać? ============================= */
-.image-list:nth-of-type(3n + 1) {
+/* .image-list:nth-of-type(3n + 1) {
   margin-right: 30px;
 }
 .image-list:nth-of-type(3n + 2) {
   margin-right: 30px;
-}
+} */
 /* ===--- END CZYM SIĘ ZAJMUJEMY (zdjęcia) /// ZESPÓŁ /// PROJECT/IMAGES ---=== */
 
 /* === ZESPÓŁ ===*/

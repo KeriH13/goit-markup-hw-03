@@ -47,6 +47,7 @@ img {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
 }
 .navigation-logo {
   display: flex;
@@ -67,7 +68,6 @@ img {
   line-height: 1.192;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-left: 215px;
   margin-right: 93px;
 }
 .web-item {
@@ -86,7 +86,7 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 142;
+  line-height: 1 142;
   letter-spacing: 0.02em;
   color: #212121;
   display: flex;
@@ -116,7 +116,6 @@ img {
 }
 .contacts {
   list-style-type: none;
-  margin-right: 227px;
 }
 .contacts-item:not(:last-child) {
   margin-right: 50px;
@@ -129,9 +128,8 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 142;
+  line-height: 1 142;
   letter-spacing: 0.02em;
-  margin-right: 227px;
 }
 .contacts-item:hover,
 .contacts-item:focus {
@@ -152,7 +150,7 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1, 714;
+  line-height: 1 714;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -170,7 +168,7 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1, 714;
+  line-height: 1 714;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -186,23 +184,27 @@ img {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 363;
+  line-height: 1 363;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin: auto;
   display: flex;
-  padding: 200px 452px 30px;
+  /* justify-content: center; */
+  width: 696px;
+  height: 120px;
 }
 .big-title {
   /*--- DODATEK dla widoczności--- */
   background-color: #2f303a;
   display: flex;
-  align-items: center;
+  padding: 200px 452px;
 }
 .btn-modal {
-  padding: 0 700px 200px 700px;
+  /* padding: 0 700px 200px 700px; */
   display: flex;
+  justify-content: center;
 }
 .btn-group {
   display: flex;
@@ -210,6 +212,7 @@ img {
 .list:not(:last-child) {
   margin-right: 30px;
 }
+
 .btn {
   background: var(--main-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -218,9 +221,7 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1, 875;
-  display: flex;
-  align-items: center;
+  line-height: 1 875;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -242,7 +243,7 @@ img {
 
 .description .container {
   display: flex;
-  padding: 774px 1474px 215px;
+  padding-bottom: -1;
 }
 .description-list {
   list-style-type: none;
@@ -256,7 +257,7 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1, 142;
+  line-height: 1 142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
@@ -266,10 +267,12 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1, 714;
+  line-height: 1 714;
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 10px;
+  width: 270px;
+  height: 75px;
 }
 /* === END 4X OPIS === */
 
@@ -279,13 +282,15 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
-  line-height: 1, 166;
+  line-height: 1 166;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
-  padding-right: 624px;
-  padding-left: 624px;
+
+  justify-content: center;
+  /* padding-right: 624px;
+  padding-left: 624px; */
 }
 /* === END SECOND TITLE(S) === */
 
@@ -294,10 +299,15 @@ img {
 .item-list {
   list-style-type: none;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  /* === align-items: center CZY justify-content: center === */
+  justify-content: center;
 }
-.image-list:not(:last-child) {
+/* === jak to inaczej zapisać? ============================= */
+.image-list:nth-of-type(3n + 1) {
+  margin-right: 30px;
+}
+.image-list:nth-of-type(3n + 2) {
   margin-right: 30px;
 }
 /* ===--- END CZYM SIĘ ZAJMUJEMY (zdjęcia) /// ZESPÓŁ /// PROJECT/IMAGES ---=== */
@@ -322,13 +332,14 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
 }
 .third-title {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 187;
+  line-height: 1 187;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -339,7 +350,7 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1, 187;
+  line-height: 1 187;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
@@ -347,13 +358,14 @@ img {
 }
 .team {
   background-color: #f5f4fa;
-  padding: 94px 695px;
+  padding: 94px 215px;
 }
 /* === END ZESPÓŁ ===*/
 
 /* === BUTTON GROUP === */
 .btn-group {
   list-style-type: none;
+  justify-content: center;
 }
 .btn-item {
   background: #f5f4fa;
@@ -363,7 +375,7 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 625;
+  line-height: 1 625;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -397,7 +409,7 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1, 875;
+  line-height: 1 875;
   letter-spacing: 0.03em;
   color: #757575;
   padding-bottom: 20px;
@@ -406,15 +418,12 @@ img {
 
 /* ===== FOOTER ===== */
 .footer-logo {
-  padding-left: 15px;
   padding-top: 60px;
   margin-bottom: 20px;
 }
-.adress {
-  padding-left: 15px;
-  margin-left: 215px;
-}
 .background-color-footer {
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* ============================ */

@@ -9,6 +9,7 @@
 body {
   font-family: var(--main-font);
   background-color: #ffffff;
+  width:1600px;
 }
 h1,
 h2,
@@ -42,12 +43,15 @@ img {
 }
 
 /* === LOGO/HERO === */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header .container {
   display: flex;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #ececec;
+  
 }
 .navigation-logo {
   display: flex;
@@ -230,6 +234,7 @@ img {
   min-width: 200px;
   height: 50px;
   border: 0;
+  justify-content: center;
 }
 .btn::first-letter {
   text-transform: uppercase;

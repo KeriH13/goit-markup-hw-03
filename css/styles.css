@@ -252,7 +252,7 @@ img {
   list-style-type: none;
   display: flex;
 }
-.title-list:not(:last-child) {
+.description-list .title-list:not(:last-child) {
   margin-right: 30px;
 }
 .title-text {

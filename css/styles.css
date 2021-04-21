@@ -9,7 +9,7 @@
 body {
   font-family: var(--main-font);
   background-color: #ffffff;
-  width:1600px;
+  width: 1600px;
 }
 h1,
 h2,
@@ -51,7 +51,6 @@ img {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  
 }
 .navigation-logo {
   display: flex;
@@ -249,7 +248,9 @@ img {
 /* === END NAGŁÓWEK === */
 
 /* === 4X OPIS === */
-
+.description-four-times.section {
+  padding-bottom: 0px;
+}
 .description .container {
   display: flex;
 }
@@ -304,6 +305,9 @@ img {
 
 /* ===--- CZYM SIĘ ZAJMUJEMY (zdjęcia) /// ZESPÓŁ /// PROJECT/IMAGES---=== */
 /*  ---=== LISTY (różne) ===--- */
+.what-we-do-second .container {
+  display: flex;
+}
 .item-list {
   list-style-type: none;
   display: flex;
@@ -319,10 +323,9 @@ img {
 }
 .photo-list {
   margin-bottom: 30px;
-  /*   jak ustawić linie bottom---
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
-  box-sizing: border-box; */
+}
+.nine-images.section {
+  padding-top: 0px;
 }
 .portfolio-list {
   list-style-type: none;
@@ -330,7 +333,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 0px;
-  padding-bottom: 94px;
+  padding-bottom: 0px;
 }
 /* === jak to inaczej zapisać? ============================= */
 /* .image-list:nth-of-type(3n + 1) {
@@ -342,6 +345,9 @@ img {
 /* ===--- END CZYM SIĘ ZAJMUJEMY (zdjęcia) /// ZESPÓŁ /// PROJECT/IMAGES ---=== */
 
 /* === ZESPÓŁ ===*/
+.employee .container {
+  display: flex;
+}
 .projects-title {
   padding-left: 24px;
 }
@@ -414,14 +420,17 @@ img {
   height: 38px;
 }
 /* === END BUTTONS - ALL OTHER === */
-
+/* --- nadpisauje padding klasy "section"! --- */
+.buttons-section.section {
+  padding-bottom: 50px;
+}
 .btn-group {
   list-style-type: none;
   justify-content: center;
   display: flex;
-  padding: 94px 518px 50px 510px;
+  padding-right: 518px;
+  padding-left: 510px;
 }
-/* ---not working--- */
 .list-group:not(:last-child) {
   margin-right: 8px;
 }
@@ -453,6 +462,8 @@ img {
 /* === END BUTTON GROUP === */
 
 /* PROJECTS/IMAGES */
+.nine-images.section {
+}
 .border-text {
   background: #ffffff;
   border-right: 1px solid #eeeeee;
